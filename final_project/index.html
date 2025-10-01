@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chris Voting DApp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Chris ETH App</h1>
+
+    <button id="connectButton" class="btn">Connect Wallet</button>
+    <button id="disconnectButton" class="btn" style="display:none;">Disconnect</button>
+    <p id="account">Account: Not connected</p>
+    <p id="balance">Balance: -</p>
+
+    
+    <div class="card">
+      <h2>Send ETH</h2>
+      <input type="text" id="recipient" placeholder="Recipient Address">
+      <input type="text" id="amount" placeholder="Amount in ETH">
+      <button id="sendButton" class="btn">Send</button>
+      <p id="status"></p>
+    </div>
+
+    <div class="card">
+      <h2>🗳️ Voting </h2>
+      <p>Vote for your favorite proposal on Sepolia</p>
+      <button id="vote1" class="btn">Vote for Proposal 1</button>
+      <button id="vote2" class="btn">Vote for Proposal 2</button>
+      <p id="voteStatus"></p>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.7.0/dist/ethers.umd.min.js"></script>
+  <script src="app.js" defer></script>
+  <script src="vote.js" defer></script>
+</body>
+</html>
